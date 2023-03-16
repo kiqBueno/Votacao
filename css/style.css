@@ -1,0 +1,85 @@
+html,body{
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #1b1b1b;
+}
+
+html,body.p{
+    color: white;
+}
+
+.cabecalho{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px gray;
+    padding: auto;
+}
+
+#tema{
+    font-size: 28px;
+    font-family: arial; 
+    max-width: 33%;
+    margin-top: 10px;
+}
+
+#quadrados {
+    margin-top: 15px;
+    height: 15%;
+    justify-items: center;
+    display: grid;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px gray;
+}
+
+input {
+    background-color: white;
+    width: 30%;
+    font-size: 16px;
+}
+
+#novoTema {
+    cursor: pointer;
+    font-size: 20px;
+    max-width: 30%;
+    width: 100%;
+    position: relative;
+    font-weight: 400;
+    background-color: #1b1b1b;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#novoTema svg {
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+} 
+
+#novoTema rect {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 450, 0;
+    transition: all 0.5s linear;
+}
+
+#novoTema:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 20, 300;
+    stroke-dashoffset: 48;
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
